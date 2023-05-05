@@ -1,5 +1,5 @@
 # GitHub Infinite Scroll
-![](https://drive.google.com/file/d/1Lovxprb8enGR9zj22xJBEZbmsmrRfWot/view)
+![github-infinite-scroll](https://user-images.githubusercontent.com/29866761/236372875-fdf5ee3b-d8e5-49ed-9160-d14e8c8e2dc0.png)
 
 ## Set GitHub access token (Optional)
 
@@ -10,8 +10,8 @@ module.exports = '{YOUR_ACCESS_TOKEN}'
 
 ## Set spreadsheet url to package.json (Optional)
 
-step1. Reference https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/
-step2. Reference https://github.com/benborgers/opensheet
+- step1. Reference https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/
+- step2. Reference https://github.com/benborgers/opensheet
 
 ## Run
 ```
