@@ -1,0 +1,6 @@
+export { default as CrossIcon } from "./cross"
+export { default as ArrowIcon } from "./arrow"
+export { default as StartIcon } from "./start"
+export { default as ForkIcon } from "./fork"
+export { default as WatchIcon } from "./watch"
+export { default as UpdatIcon } from "./update"

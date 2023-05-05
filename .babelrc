@@ -1,0 +1,43 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    // "babel-plugin-styled-components",
+    "emotion",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@utils": "./utils",
+          "@components": "./components",
+          "@containers": "./containers",
+          "@constants": "./constants",
+          "@hoc": "./hoc",
+          "@hook": "./hook",
+          "@slices": "./states/slices",
+          "@selector": "./states/selector",
+          "@states": "./states",
+          "@public": "./public",
+          "@styles": "./styles"
+        },
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        // "transform-remove-console"
+      ]
+    }
+  }
+}

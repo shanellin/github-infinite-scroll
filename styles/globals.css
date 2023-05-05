@@ -1,16 +1,53 @@
-html,
 body {
-  padding: 0;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  flex-grow: 0;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: #00324e !important;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+  font-family: "Roboto", sans-serif !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin: 0
+}
+
+/* remove input arrow */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.is-sticky {
+  position: fixed !important;
+  top: 48px;
+  height: 80px !important;
+  width: 752px;
+  z-index: 999;
+  border-radius: 0px;
+  box-sizing: border-box !important;
+  background-color: #ffffff;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
