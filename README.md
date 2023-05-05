@@ -3,10 +3,13 @@
 
 ## Set GitHub access token (Optional)
 
-Create `GITHUB_ACCESS_TOKEN.js` at repo root
-```javascript
-module.exports = '{YOUR_ACCESS_TOKEN}'
-```
+- step1. Create GitHub access token
+    - Reference https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+    
+- step2. Create `GITHUB_ACCESS_TOKEN.js` at repo root
+    ```javascript
+    module.exports = '{YOUR_ACCESS_TOKEN}'
+    ```
 
 ## Set spreadsheet url to package.json (Optional)
 
