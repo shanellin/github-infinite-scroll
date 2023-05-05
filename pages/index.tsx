@@ -10,6 +10,7 @@ import assetPrefix from "@prefix"
 import { getRepos, resetRepo } from "@slices/repo"
 import { wrapper } from "@states/store"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { languageI18nLocales } from "@constants"
 // Styles
 
 const Home: NextPageWithLayout = (props) => {
@@ -35,13 +36,13 @@ export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps
   let props = {}
   try {
     dispatch(resetRepo())
-    await dispatch(getRepos()).unwrap() 
+    await dispatch(getRepos()).unwrap()
   } catch (err) {
     console.log(`The Error happened in getServerSideProps: ${err}`)
   } finally {
     props = {
       ...props,
-      ...(await serverSideTranslations(locale, ["common"]))
+      ...(await serverSideTranslations(locale, ["common"], null, languageI18nLocales))
     }
     return { props }
   }
